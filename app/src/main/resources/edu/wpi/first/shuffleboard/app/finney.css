@@ -12,13 +12,14 @@
  ******************************************************************************/
 .root {
     -fx-text-base-color: #fefefe;
-    /* Swatch Colors - Yellow */
+    /* Swatch Colors - Yellow and Green*/
 
     -swatch-100: hsb(39.66, 80%, 98%);
     -swatch-200: hsb(39.66, 80%, 88%);
     -swatch-300: hsb(39.66, 80%, 78%);
     -swatch-400: hsb(39.66, 80%, 68%);
     -swatch-500: hsb(39.66, 80%, 58%);
+    -swatch-600: #348d3d;
 
     -swatch-dark-green: rgb(0, 37, 26);
     -swatch-gray: derive(-swatch-dark-green, +10%);
@@ -65,7 +66,7 @@
  *                                                                             *
  ******************************************************************************/
 .menu-bar {
-    -fx-background-color: -swatch-light-gray;
+    -fx-background-color: -swatch-600;
 }
 
 .menu-item {
@@ -81,7 +82,7 @@
 }
 
 .menu-item:hover, .menu-item:focused {
-    -fx-background-color: -swatch-500;
+    -fx-background-color: -swatch-600;
 }
 
 /*******************************************************************************
@@ -261,11 +262,11 @@
 
 .tile:selected {
     -fx-background-color: #10102F;
-    -fx-effect: dropshadow(gaussian, -swatch-100, 6, 0.1, 0, 4);
+    -fx-effect: dropshadow(gaussian, -swatch-600, 6, 0.1, 0, 4);
 }
 
 .tile:selected .tile-title-bar {
-    -fx-background-color: -swatch-500;
+    -fx-background-color: -swatch-600;
 }
 
 .tile-title-bar {
@@ -309,7 +310,7 @@
 }
 
 .list-view:focused .list-cell:filled:focused:selected {
-    -fx-background-color: -swatch-100;
+    -fx-background-color: -swatch-600;
 }
 
 .list-view:hover .list-cell:filled:hover {
@@ -332,11 +333,11 @@
 }
 
 .combo-box-popup {
-    -fx-border-color: orange;
+    -fx-border-color: orange; 
 }
 
 .combo-box-popup .list-view {
-    -fx-border-color: -swatch-300;
+    -fx-border-color: -swatch-600;
     -fx-border-width: 1px;
     -fx-background-color: -swatch-dark-green;
 }
@@ -352,7 +353,7 @@
 
 .combo-box-popup .list-view .list-cell:selected {
     -fx-background-color: -swatch-500;
-    -fx-text-fill: yellow;
+    -fx-text-fill: yellow; 
 }
 
 /*******************************************************************************
@@ -370,7 +371,7 @@
  *                                                                             *
  ******************************************************************************/
 .gauge {
-    -fx-needle-color: -swatch-100;
+    -fx-needle-color: -swatch-600;
     -fx-tick-mark-color: white;
     -fx-major-tick-color: white;
     -fx-minor-tick-color: #aaa;
@@ -401,6 +402,6 @@
  *                                                                             *
  ******************************************************************************/
 .settings-pane {
-    -fx-border-color: #171F2F;
+    -fx-border-color: rgb(243, 12, 12);
 }
 
